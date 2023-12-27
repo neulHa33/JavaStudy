@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>Practice02</name>
+=======
+	<name>HelloWorld</name>
+>>>>>>> branch 'practice' of https://github.com/neulHa33/JavaStudy.git
 	<comment></comment>
 	<projects>
 	</projects>
