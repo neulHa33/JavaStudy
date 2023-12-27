@@ -1,0 +1,12 @@
+package com.javaex.helloworld;
+
+public class Ex03 {
+	public static void main(String[] args) {
+		
+		int age = 15;
+		//age가 0살 초과이고 18살 미만임ㄴ
+		if(age>0 && age<18) {
+			System.out.println("청소년 입니다.");
+		}
+	}
+}
