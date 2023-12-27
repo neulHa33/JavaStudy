@@ -5,20 +5,15 @@ import java.util.Scanner;
 public class Helloworld {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("근무 시간 :  ");
 		
-		int workTime = sc.nextInt();
-		int salary;
+		System.out.println("점수를 입력하세요 ");
+		int point = sc.nextInt();
 		
-		if(workTime<9) {
-			salary = workTime * 10000;
-			
+		if(point%3==0) {
+			System.out.println(point + "는 3의 배수입니다.");
 		} else {
-			salary = 8*10000 + (workTime -8)*12000;
-			
+			System.out.println(point + "는 3의 배수가 아닙니다.");
 		}
-		
-		System.out.println("임금은 " + salary + "원 입니다.");
 		
 		sc.close();
 	}
