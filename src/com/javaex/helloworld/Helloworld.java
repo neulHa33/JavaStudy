@@ -12,7 +12,7 @@ public class Helloworld {
 		if(point%3==0) {
 			System.out.println(point + "는 3의 배수입니다.");
 		} else {
-			System.out.println(point + "는 3의 배수가 아닙니다.");
+			System.out.println(point + "는 3의 배수가 아닙니다!!");
 		}
 		
 		sc.close();
