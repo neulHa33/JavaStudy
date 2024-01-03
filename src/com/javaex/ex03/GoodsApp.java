@@ -30,7 +30,7 @@ public class GoodsApp {
 		
 		System.out.println(computer.getName());
 		System.out.println(computer.getPrice());
-		
+		   
 		computer.showInfo();
 	}
 
