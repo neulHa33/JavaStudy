@@ -4,7 +4,6 @@ public class PointApp {
 
 	public static void main(String[] args) {
 
-		
 		Point p01 = new Point(2,2);
 		//System.out.println(p01.toString());
 		p01.draw();
@@ -23,9 +22,6 @@ public class PointApp {
 		c01.setColor("노랑");
 		
 		c01.draw();		
-		
-		
-		
 	
 	}
 
