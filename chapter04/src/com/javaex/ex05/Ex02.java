@@ -9,14 +9,14 @@ public class Ex02 {
 		// TODO Auto-generated method stub
 		Set<Integer> iSet = new HashSet<Integer>();
 		
-		for(int i=0; i<6; i++) {
-			int aa = (int)(Math.random()*45)+1;
-			Integer ii = new Integer(aa);
-			iSet.add(ii);
-		}
+		while (iSet.size() < 6) {
+            int aa = (int) (Math.random() * 45) + 1;
+            Integer ii = aa;
+            iSet.add(ii);
+        }
 		
-		for( Integer num : iSet) {
-			System.out.print(num.toString() + " ");
+		for( int num : iSet) {
+			System.out.print(num + " ");
 		}
 	}
 
