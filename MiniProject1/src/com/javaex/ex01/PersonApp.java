@@ -68,9 +68,6 @@ public class PersonApp {
 					System.out.println( "\t" +pList.get(i).getName()  + "\t" + pList.get(i).getHp() + "\t" + pList.get(i).getCompany());
 				}
 				
-				
-				
-				
 			} else if(s == 2) {
 				//2.등록
 				System.out.println("<2.등록>");
@@ -88,6 +85,7 @@ public class PersonApp {
 				System.out.println("[등록되었습니다.]");	
 				
 				br.close();
+				
 			} else if(s == 3) {
 				
 				System.out.println("<3.삭제>");
@@ -120,6 +118,7 @@ public class PersonApp {
    				br.close();
    				
    				System.out.println("[삭제되었습니다.]");
+   				
 			} else if(s == 4) {
 				//검색
 				pList.clear();
