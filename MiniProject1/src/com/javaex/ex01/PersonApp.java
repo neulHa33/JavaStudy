@@ -95,13 +95,15 @@ public class PersonApp {
 				
 				pList.remove(num-1);
 				
-				//파일 내용 지우고 다시 쓰기
+				/*파일 내용 지우고 다시 쓰기*/
+				//파일 내용 지우기
 				try (FileOutputStream fos = new FileOutputStream(path, false)) {
 
 		        } catch (IOException e) {
 		            e.printStackTrace();
 		        }
 		        
+				//파일 내용 다시 쓰기
 				for(int i=0; i<pList.size(); i++) {
 					if(i==pList.size()-1) {
 					bw.write(pList.get(i).getName()  + "," + pList.get(i).getHp() + "," + pList.get(i).getCompany());
@@ -121,26 +123,11 @@ public class PersonApp {
    				
 			} else if(s == 4) {
 				//검색
-				pList.clear();
 				System.out.println("<4.검색>");
 				System.out.print(">이름:");
 				String string = sc.next();
 			    
 				String str;
-				
-				while ((str = br.readLine()) != null) {
-			        String[] array = str.split(",");
-			        if (array.length == 3) {
-			            String name = array[0];
-			            String hp = array[1];
-			            String company = array[2];
-
-			            Person p = new Person(name, hp, company);
-			            pList.add(p);
-			        } else {
-			            
-			        }
-			    }
 				
 				for(int i=0; i<pList.size(); i++) {
 					if((pList.get(i).getName()).contains(string)) {
