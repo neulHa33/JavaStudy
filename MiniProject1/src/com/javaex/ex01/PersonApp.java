@@ -89,28 +89,6 @@ public class PersonApp {
 				
 				br.close();
 			} else if(s == 3) {
-				pList.clear();
-				while(true) {
-					String str = br.readLine();
-					
-					if(str == null) {
-						break;
-					}
-					
-					String[] array = str.split(",");
-					String name = array[0];
-					String hp = array[1];
-					String company = array[2];
-					
-					Person p = new Person(name, hp, company);
-					
-					pList.add(p);
-				}
-				
-				for(int i=0; i<pList.size(); i++) {
-					System.out.print(i+1 + ".");
-					System.out.println( "\t" +pList.get(i).getName()  + "\t" + pList.get(i).getHp() + "\t" + pList.get(i).getCompany());
-				}
 				
 				System.out.println("<3.삭제>");
 				//3.삭제
@@ -118,11 +96,6 @@ public class PersonApp {
 				int num = sc.nextInt();
 				
 				pList.remove(num-1);
-				
-				for(int i=0; i<pList.size(); i++) {
-					System.out.print(i+1 + ".");
-					System.out.println( "\t" +pList.get(i).getName()  + "\t" + pList.get(i).getHp() + "\t" + pList.get(i).getCompany());
-				}
 				
 				//파일 내용 지우고 다시 쓰기
 				try (FileOutputStream fos = new FileOutputStream(path, false)) {
@@ -146,13 +119,14 @@ public class PersonApp {
    			    
    				br.close();
    				
+   				System.out.println("[삭제되었습니다.]");
 			} else if(s == 4) {
 				//검색
+				pList.clear();
 				System.out.println("<4.검색>");
 				System.out.print(">이름:");
 				String string = sc.next();
 			    
-				
 				String str;
 				
 				while ((str = br.readLine()) != null) {
